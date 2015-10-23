@@ -59,4 +59,8 @@ defmodule LuhnTest do
     assert !Luhn.valid? "abc12392b", 16
     assert !Luhn.valid? "abc123a", 16
   end
+
+  test "Hexadecimal base and mod 10" do
+    assert Luhn.valid? "0F04871513130338972614312C30307", 16, 10
+  end
 end
