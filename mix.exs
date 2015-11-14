@@ -3,11 +3,11 @@ defmodule Luhn.Mixfile do
 
   def project do
     [app: :luhn,
-     version: "0.3.0",
+     version: "0.4.0",
      elixir: "~> 1.0",
      description: "Luhn algorithm in Elixir",
      package: [
-       maintainers: ["Takayuki Matsubara"],
+       maintainers: ["Takayuki Matsubara", "Florian J. Breunig"],
        licenses: ["MIT"],
        links: %{"GitHub" => "https://github.com/ma2gedev/luhn_ex"}
      ],

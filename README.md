@@ -1,6 +1,6 @@
 # Luhn algorithm in Elixir
 
-[![hex.pm version](https://img.shields.io/hexpm/v/luhn.svg)](https://hex.pm/packages/luhn) [![hex.pm downloads](https://img.shields.io/hexpm/dt/luhn.svg)](https://hex.pm/packages/luhn) [![Build Status](https://travis-ci.org/ma2gedev/luhn_ex.svg?branch=master)](https://travis-ci.org/ma2gedev/luhn_ex)
+[![Build Status](https://travis-ci.org/my-flow/luhn_ex.svg?branch=master)](https://travis-ci.org/my-flow/luhn_ex)
 
 Validate Luhn number.
 
@@ -10,7 +10,7 @@ Validate Luhn number.
 # mix.exs
 defp deps do
   [
-    {:luhn, "~> 0.2.0"}
+    {:luhn, "~> 0.4.0"}
   ]
 end
 
@@ -27,6 +27,10 @@ Luhn.valid? "378282246310005"
 
 # Integer type number
 Luhn.valid? 378282246310005
+# => true
+
+# Luhn base 16 mod 10
+Luhn.valid? "0F04871513130338972614312C30307", 16, 10
 # => true
 ```
 
