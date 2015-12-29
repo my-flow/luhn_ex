@@ -1,15 +1,15 @@
-defmodule Luhn.Mixfile do
+defmodule Luhnatex.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :luhn,
-     version: "0.4.0",
+    [app: :luhnatex,
+     version: "0.5.0",
      elixir: "~> 1.0",
      description: "Luhn algorithm in Elixir",
      package: [
        maintainers: ["Takayuki Matsubara", "Florian J. Breunig"],
        licenses: ["MIT"],
-       links: %{"GitHub" => "https://github.com/ma2gedev/luhn_ex"}
+       links: %{"GitHub" => "https://github.com/my-flow/luhnatex"}
      ],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,

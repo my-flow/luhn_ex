@@ -1,6 +1,6 @@
 # Luhn algorithm in Elixir
 
-[![Build Status](https://travis-ci.org/my-flow/luhn_ex.svg?branch=master)](https://travis-ci.org/my-flow/luhn_ex)
+[![Build Status](https://travis-ci.org/my-flow/luhnatex.svg?branch=master)](https://travis-ci.org/my-flow/luhnatex)
 
 Validate Luhn number.
 
@@ -10,7 +10,7 @@ Validate Luhn number.
 # mix.exs
 defp deps do
   [
-    {:luhn, "~> 0.4.0"}
+    {:luhn, "~> 0.5.0"}
   ]
 end
 
