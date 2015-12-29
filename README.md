@@ -1,6 +1,7 @@
 # Luhn algorithm in Elixir
 
 [![Build Status](https://travis-ci.org/my-flow/luhnatex.svg?branch=master)](https://travis-ci.org/my-flow/luhnatex)
+[![Hex.pm](https://img.shields.io/hexpm/v/luhnatex.svg)](https://hex.pm/packages/luhnatex)
 
 Validate Luhn number.
 
