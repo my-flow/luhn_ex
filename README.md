@@ -1,7 +1,10 @@
 # Luhn algorithm in Elixir
 
+[![hex.pm version](https://img.shields.io/hexpm/v/luhnatex.svg)](https://hex.pm/packages/luhnatex)
+[![hex.pm daily downloads](https://img.shields.io/hexpm/dd/luhnatex.svg)](https://hex.pm/packages/luhnatex)
+[![hex.pm weekly downloads](https://img.shields.io/hexpm/dw/luhnatex.svg)](https://hex.pm/packages/luhnatex) 
+[![hex.pm downloads](https://img.shields.io/hexpm/dt/luhnatex.svg)](https://hex.pm/packages/luhnatex)
 [![Build Status](https://travis-ci.org/my-flow/luhnatex.svg?branch=master)](https://travis-ci.org/my-flow/luhnatex)
-[![Hex.pm](https://img.shields.io/hexpm/v/luhnatex.svg)](https://hex.pm/packages/luhnatex)
 
 Validate Luhn number.
 
@@ -11,7 +14,7 @@ Validate Luhn number.
 # mix.exs
 defp deps do
   [
-    {:luhn, "~> 0.5.0"}
+    {:luhn, "~> 0.5.1"}
   ]
 end
 
@@ -38,7 +41,8 @@ Luhn.valid? "0F04871513130338972614312C30307", 16, 10
 ## Benchmarking
 
 ```
-$ mix archive.install https://github.com/alco/benchfella/releases/download/v0.2.1/benchfella-0.2.1.ez
+$ MIX_ENV=bench mix deps.get
+$ MIX_ENV=bench mix compile
 $ mix bench
 ```
 

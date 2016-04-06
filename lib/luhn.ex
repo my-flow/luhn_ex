@@ -23,13 +23,13 @@ defmodule Luhn do
     number
     |> String.split("", trim: true)
     |> Enum.reduce([], fn(n, acc) -> [String.to_integer(n, base)|acc] end)
-    |> double(mod)
+    |> double(mod, 0)
     |> rem(mod)
   end
 
-  defp double([], _), do: 0
-  defp double([x], _), do: x
-  defp double([x,y|tail], mod), do: x + sum(y * 2, mod) + double(tail, mod)
+  def double([], _, acc), do: acc
+  def double([x], _, acc), do: x + acc
+  def double([x,y|tail], mod, acc), do: double(tail, mod, acc + x + sum(y * 2, mod))
 
   defp sum(number, mod) when number >= mod, do: sum(number - mod + 1, mod)
   defp sum(number, _), do: number
